@@ -5,3 +5,4 @@ The code in the file ```src/spectral_1d.f90``` solves a version of the Gross-Pit
 The initial seed wave function given to it is a simple gaussian pulse.  We used a fourier method to solve the NLSE.
 We solve the equation in two steps. First the non derivative part of the equation is progressed in time, to arrive 
 at an intermediate solution. Then this is used as an initial value for solving the derivative part using fourier methods.
+The code uses FFTW3 for fortran90, so make sure to have the fftw3.f03 file in the same directory as your source code.
